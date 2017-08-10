@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.app.nisha.caliculator.MainActivity"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            >
+
+            <TextView
+                android:id="@+id/id_tv_store"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                android:text="Store"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+
+                />
+            <TextView
+                android:id="@+id/id_tv_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorAccent"
+                android:textSize="45sp"
+                android:gravity="left"
+                android:padding="10dp"
+                android:layout_toLeftOf="@id/id_tv_store"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            >
+
+            <TextView
+                android:id="@+id/id_tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:text="Back"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:padding="5dp"
+                android:layout_alignParentRight="true"
+
+                />
+            <TextView
+                android:id="@+id/id_tv_values"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:textSize="45sp"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+
+                android:layout_toLeftOf="@id/id_tv_back"/>
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="@color/colorPrimaryDark"
+            >
+
+
+
+                <Button android:text="ALG"
+
+                    style="@style/style_button_round"
+                    />
+                <Button android:text="TRIG"
+                    style="@style/style_button_round"
+
+
+                    />
+                <Button android:text="CALC"
+                    style="@style/style_button_round"
+
+
+                    />
+                <Button android:text="STATS"
+                    style="@style/style_button_round"
+
+
+                    />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+
+        android:orientation="vertical"
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <Button android:text="("
+
+                android:id="@+id/id_btn_bracketleft"
+
+                style="@style/style_button_green"
+                />
+            <Button android:text=")"
+                android:id="@+id/id_btn_bracketright"
+
+                style="@style/style_button_green"
+                />
+            <Button android:text="xY"
+                android:id="@+id/id_btn_power"
+
+                style="@style/style_button_green"
+                />
+            <Button android:text="÷"
+                android:id="@+id/id_btn_division"
+
+                style="@style/style_button_green"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <Button android:text="7"
+                android:id="@+id/id_btn_seven"
+
+                style="@style/style_button"
+                />
+            <Button android:text="8"
+                android:id="@+id/id_btn_eight"
+
+                style="@style/style_button"
+                />
+            <Button android:text="9"                 android:id="@+id/id_btn_nine"
+                style="@style/style_button"/>
+            <Button android:text="X"                 android:id="@+id/id_btn_mul"
+                style="@style/style_button_green" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <Button android:text="4"
+                android:id="@+id/id_btn_four"
+
+                style="@style/style_button"
+                />
+            <Button android:text="5"                 android:id="@+id/id_btn_five"
+
+                style="@style/style_button"
+                />
+            <Button android:text="6"                 android:id="@+id/id_btn_six"
+                style="@style/style_button"/>
+            <Button android:text="-"                  android:id="@+id/id_btn_minus"
+                style="@style/style_button_green" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <Button android:text="1"
+                android:id="@+id/id_btn_one"
+
+                style="@style/style_button"
+                />
+            <Button android:text="2"
+                android:id="@+id/id_btn_two"
+
+                style="@style/style_button"
+                />
+            <Button android:text="3"                 android:id="@+id/id_btn_three"
+                style="@style/style_button"/>
+            <Button android:text="+"                  android:id="@+id/id_btn_addition"
+                style="@style/style_button_green" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <Button android:text="MR"
+                android:id="@+id/id_btn_mr"
+
+                style="@style/style_button"
+                />
+            <Button android:text="0"
+                android:id="@+id/id_btn_zero"
+
+                style="@style/style_button"
+                />
+            <Button android:text="."                  android:id="@+id/id_btn_decimal"
+                style="@style/style_button"/>
+            <Button android:text="="                 android:id="@+id/id_btn_result"
+                style="@style/style_button_green" />
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
